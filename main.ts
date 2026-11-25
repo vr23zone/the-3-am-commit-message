@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const entry =
-  "fix: re-add the WHERE clause I removed at 02:59; 48M rows updated, none intentionally. Rollback complete. My standup update will be a single word, and I am still generating it.";
+  "hotfix: stopped the 3 AM retry loop that emailed the CEO 1,842 incident reports. Prod is back. The reports are now our most accurate postmortem; I'll cite them at standup instead of apologizing.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", entry, "utf8");
